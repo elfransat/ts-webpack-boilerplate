@@ -1,7 +1,11 @@
-import { Card } from './../classes/Card';
-
 export interface PlayerBehavior {
-    requestCard: () => boolean,
+  requestCard: () => boolean;
 
-    receiveCard: (card: Card) => void
+  receiveCard: (card: number) => void;
+
+  reviewCards: () => number[];
+
+  checkPlayerStatus: () => void;
+
+  calculateCards: () => number;
 }
